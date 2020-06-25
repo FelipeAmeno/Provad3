@@ -8,8 +8,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'saude-mental',
+    loadChildren: () => import('./saude-mental/saude-mental.module').then(m => m.SaudeMentalPageModule)
+  },
+  {
+    path: 'meus-dados',
+    loadChildren: () => import('./meus-dados/meus-dados.module').then(m => m.MeusDadosPageModule)
   }
 ];
 
@@ -19,4 +23,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

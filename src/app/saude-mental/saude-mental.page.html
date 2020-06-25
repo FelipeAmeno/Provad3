@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>SaudeMental</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+            <ion-label>ID: </ion-label>
+            <ion-input type="text" name="id"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Nome: </ion-label>
+            <ion-input type="text" name="nome"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Idade: </ion-label>
+            <ion-input type="text" name="idade"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Saude Mental: </ion-label>
+            <ion-input type="text" name="saudeMental"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Raça/Cor: </ion-label>
+            <ion-input type="text" name="Raça/Cor"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Saude Mental</ion-label>
+            <ion-select value="brown" okText="Selecionar" cancelText="Cancelar">
+                <ion-select-option value="1">1</ion-select-option>
+                <ion-select-option value="2">2</ion-select-option>
+                <ion-select-option value="3">3</ion-select-option>
+                <ion-select-option value="4">4</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-button color="secundary" type="submit">Buscar por ID</ion-button>
+        <ion-button color="secundary" type="submit">Buscar pela RAÇA</ion-button>
+    </form>
+</ion-content>
